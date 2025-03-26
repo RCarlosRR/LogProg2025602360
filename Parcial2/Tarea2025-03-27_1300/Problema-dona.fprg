@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Problemadona"/>
+        <attribute name="authors" value="crepo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 01:37:35 p. m."/>
+        <attribute name="created" value="Y3JlcG87TVNJOzIwMjUtMDMtMjU7MDE6MTE6NTYgcC4gbS47MjIzNQ=="/>
+        <attribute name="edited" value="Y3JlcG87TVNJOzIwMjUtMDMtMjU7MDE6Mzc6MzUgcC4gbS47NjsyMzUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dona" type="Integer" array="False" size=""/>
+            <declare name="pago" type="Real" array="False" size=""/>
+            <declare name="cantidad" type="Integer" array="False" size=""/>
+            <assign variable="cantidad" expression="0"/>
+            <assign variable="dona" expression="10"/>
+            <input variable="cantidad"/>
+            <if expression="cantidad&gt;=50">
+                <then>
+                    <assign variable="pago" expression="cantidad*dona*.8"/>
+                    <output expression="pago" newline="True"/>
+                </then>
+                <else>
+                    <if expression="cantidad&gt;=30">
+                        <then>
+                            <assign variable="pago" expression="dona*cantidad*.9"/>
+                            <output expression="pago" newline="True"/>
+                        </then>
+                        <else>
+                            <assign variable="pago" expression="cantidad*dona"/>
+                            <output expression="pago" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
