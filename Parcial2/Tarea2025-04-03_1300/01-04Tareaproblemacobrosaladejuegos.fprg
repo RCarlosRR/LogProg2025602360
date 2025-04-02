@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="01-04Tareaproblemacobrosaladejuegos"/>
+        <attribute name="authors" value="crepo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 08:09:18 p. m."/>
+        <attribute name="created" value="Y3JlcG87TVNJOzIwMjUtMDQtMDE7MDg6MDA6NTAgcC4gbS47MjIyOQ=="/>
+        <attribute name="edited" value="Y3JlcG87TVNJOzIwMjUtMDQtMDE7MDg6MDk6MTggcC4gbS47MTsyMzUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="precio" type="Integer" array="False" size=""/>
+            <declare name="edad" type="Integer" array="False" size=""/>
+            <assign variable="edad" expression="0"/>
+            <assign variable="precio" expression="0"/>
+            <input variable="edad"/>
+            <if expression="edad&lt;4">
+                <then>
+                    <output expression="&quot;Puede entrar gratis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="edad&gt;=4 AND edad &lt;=18">
+                        <then>
+                            <output expression="&quot;La entrada cuesta 200&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="edad&gt;18">
+                                <then>
+                                    <output expression="&quot;Debe pagar 500&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;revisar diagrama&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
