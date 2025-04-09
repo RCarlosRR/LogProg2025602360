@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Factorial09-04-2025"/>
+        <attribute name="authors" value="crepo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 09:35:52 p. m."/>
+        <attribute name="created" value="Y3JlcG87TVNJOzIwMjUtMDQtMDg7MDc6MzI6MzcgcC4gbS47MjI0NQ=="/>
+        <attribute name="edited" value="Y3JlcG87TVNJOzIwMjUtMDQtMDg7MDk6MzU6NTIgcC4gbS47MTsyMzU1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Numero" type="Integer" array="False" size=""/>
+            <declare name="Resultado" type="Integer" array="False" size=""/>
+            <declare name="Contador" type="Integer" array="False" size=""/>
+            <assign variable="Resultado" expression="1"/>
+            <output expression="&quot;Ingresa un numero entero&quot;" newline="True"/>
+            <input variable="Numero"/>
+            <for variable="Contador" start="1" end="Numero" direction="inc" step="1">
+                <assign variable="Resultado" expression="Contador*Resultado"/>
+            </for>
+            <output expression="&quot;el factorial de el numero que ingresaste es &quot; &amp;Resultado" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

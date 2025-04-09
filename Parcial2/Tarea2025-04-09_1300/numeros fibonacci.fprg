@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="numeros fibonacci"/>
+        <attribute name="authors" value="crepo"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 11:23:45 p. m."/>
+        <attribute name="created" value="Y3JlcG87TVNJOzIwMjUtMDQtMDg7MDk6NTI6MTkgcC4gbS47MjI0OQ=="/>
+        <attribute name="edited" value="Y3JlcG87TVNJOzIwMjUtMDQtMDg7MTE6MjM6NDUgcC4gbS47MTsyMzQ3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Fibo, PNS, N1, N2, N3" type="Integer" array="False" size=""/>
+            <assign variable="PNS" expression="64"/>
+            <assign variable="Fibo" expression="0"/>
+            <output expression="&quot;Indique el primer numero base&quot;" newline="True"/>
+            <input variable="N1"/>
+            <output expression="&quot;Indique el segundo valor base&quot;" newline="True"/>
+            <input variable="N2"/>
+            <for variable="Fibo" start="1" end="PNS" direction="inc" step="1">
+                <assign variable="N3" expression="N1+N2"/>
+                <assign variable="N1" expression="N2"/>
+                <assign variable="N2" expression="N3"/>
+                <output expression="N3" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
